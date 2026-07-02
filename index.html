@@ -561,12 +561,14 @@
       <div class="eyebrow">Pregunta 2 de 2</div>
       <h1>¿Norteñito o banda?</h1>
       <div class="choices">
-        <button class="choice-btn" onclick="go('s4', 4)">
+        <button class="choice-btn" onclick="go('s4', 4);
+          playMusic();">
           <span class="icon">🤠</span>Norteñito<span class="label-sub"
             >acordeón hasta que amanezca</span
           >
         </button>
-        <button class="choice-btn" onclick="go('s4', 4)">
+        <button class="choice-btn" onclick="go('s4', 4); 
+          playMusic();">
           <span class="icon">🎺</span>Banda<span class="label-sub"
             >para gritar hasta quedarte ronco</span
           >
@@ -586,10 +588,7 @@
       </p>
       <button
         class="continue-btn"
-        onclick="
-          go('s5', 5);
-          playMusic();
-        "
+        onclick="go('s5', 5)"
       >
         Ver los detalles →
       </button>
